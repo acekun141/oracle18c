@@ -1,0 +1,8 @@
+sudo: required
+
+env:
+  - ORACLE_HOME=/u01/app/oracle/product/12.1.0/xe ORACLE_SID=XE
+
+before_install:
+  - wget https://raw.githubusercontent.com/acekun141/oracle18c/master/setup_and_install.sh
+  - bash ./setup_and_install.sh
